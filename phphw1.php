@@ -5,3 +5,4 @@
 
     #以下程式是列印出時間日期#
     print time();
+    print date('Y-M-D');
