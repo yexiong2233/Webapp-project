@@ -7,7 +7,7 @@ switch($lunch){
     echo"每碗100元";
     break;
     case"kari";
-     echo"70元";
+     echo"每碗70元";
     break;
         default;
         echo"吃泡麵";
