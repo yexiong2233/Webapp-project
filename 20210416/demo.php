@@ -1,7 +1,7 @@
 <?php
 include "pains.php";
 
-$tshirt = new clothes("百襯衫",1000);
+$tshirt = new Tshirt("百襯衫",1000);
 printf("衣服名字: %s\n",$tshirt->getName());
 printf("衣服的價錢: %d\n",$tshirt->getPrize());
 printf("衣服清洗方式: %s\n",$tshirt->dowash());

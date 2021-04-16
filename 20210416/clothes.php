@@ -1,6 +1,6 @@
 <?php
 include "doWash.php";
-class clothes implements dowash{
+class Tshirt implements dowash{
     private $name;
     private $prize;
 
@@ -9,7 +9,7 @@ class clothes implements dowash{
         $this->prize = $outsidePrize;
     }
 
-    public function setName($outsidename){
+      public function setName($outsidename){
         $this->name = $outsidename;
     }
     public function getName(){
@@ -17,7 +17,7 @@ class clothes implements dowash{
     }
     
     public function setPrize($outsidePrize){
-        $this->prize = $outsidePrize;   
+        $this->prize = $outsidePrize;
     }
     public function getPrize(){
         return $this->prize;
@@ -29,7 +29,7 @@ class clothes implements dowash{
 
     public function __destruct()
     {
-            
+
     }
 }
 ?>
