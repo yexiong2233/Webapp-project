@@ -18,5 +18,5 @@ function fib($n, $output = true){
     return $sum;
 }
  
-fib(10);
+fib(9);
 ?>
