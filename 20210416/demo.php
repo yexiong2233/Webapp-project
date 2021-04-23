@@ -1,5 +1,6 @@
 <?php
 include "pains.php";
+include "Applocation.php";
 
 $tshirt = new Tshirt("百襯衫",1000);
 printf("衣服名字: %s\n",$tshirt->getName());
@@ -12,4 +13,14 @@ printf("褲子價錢:%d 元\n",$cowpaint->getPrize());
 printf("橘子長度:%d CM\n",$cowpaint->getLength());
 printf("褲子腰圍:%d 寸\n",$cowpaint->getWaist());
 printf("褲子的清洗方式:%s",$cowpaint->dowash());
+
+$cowpaint->setMark(new class implements Mark{
+    public function domark(string $mark){
+        print($mark);
+
+    }
+
+})
+
+$cowpaint->getMark();
 ?>
